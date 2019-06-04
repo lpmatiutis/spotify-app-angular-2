@@ -1,0 +1,3 @@
+¿ Que es un componente en Angular ?
+
+Un componente en Angular es una combinación de un archivo html con un ts y algunas veces scss para crear un elemento con caracteristicas propias tanto de comportamiento como de apariencia que se puede mostrar en un navegador. Lo puedes pensar como en una pieza de lego la cual vas juntando con otras piezas de lego para formar algo interesante para interactuar con un usuario.

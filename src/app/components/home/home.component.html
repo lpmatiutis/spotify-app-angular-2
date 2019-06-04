@@ -1,5 +1,5 @@
 <div class="card-columns">
-    <div *ngFor="let cancion of nuevasCanciones" class="card">
+    <div *ngFor="let cancion of nuevasCanciones; trackBy: trackByFn" class="card">
         <img [src]="cancion.images[0].url" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title"> {{cancion.name}} </h5>
