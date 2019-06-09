@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <app-loading *ngIf="loading"></app-loading>
 <div *ngIf="error" class="alert alert-danger animated fadeIn">
     <h3>Error</h3>
@@ -6,3 +7,18 @@
     </p>
 </div>
 <app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
+=======
+<div class="card-columns">
+    <div *ngFor="let cancion of nuevasCanciones; trackBy: trackByFn" class="card">
+        <img [src]="cancion.images[0].url" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"> {{cancion.name}} </h5>
+            <p class="card-text">
+                <span *ngFor="let artista of cancion.artists" class="badge badge-pill badge-primary">
+                    {{artista.name}}
+                </span>
+            </p>
+        </div>
+    </div>
+</div>
+>>>>>>> 5a90bbc52cc478692ecf7466fd64a7afc57446eb
